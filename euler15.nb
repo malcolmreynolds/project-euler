@@ -1,0 +1,118 @@
+(* Content-type: application/mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 6.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       145,          7]
+NotebookDataLength[      2923,        108]
+NotebookOptionsPosition[      2355,         84]
+NotebookOutlinePosition[      2691,         99]
+CellTagsIndexPosition[      2648,         96]
+WindowFrame->Normal
+ContainsDynamic->False*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"routes", "[", 
+    RowBox[{"0", ",", "n_"}], "]"}], " ", ":=", " ", 
+   RowBox[{
+    RowBox[{"routes", "[", 
+     RowBox[{"0", ",", "n"}], "]"}], " ", "=", " ", "1"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.436691010131588*^9, 3.436691068824685*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"routes", "[", 
+    RowBox[{"m_", ",", "0"}], "]"}], " ", ":=", " ", 
+   RowBox[{
+    RowBox[{"routes", "[", 
+     RowBox[{"m", ",", "0"}], "]"}], " ", "=", " ", "1"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.43669107061868*^9, 3.436691090393347*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"routes", "[", 
+    RowBox[{"m_", ",", "n_"}], "]"}], " ", ":=", " ", 
+   RowBox[{
+    RowBox[{"routes", "[", 
+     RowBox[{"m", ",", "n"}], "]"}], " ", "=", " ", 
+    RowBox[{
+     RowBox[{"routes", "[", 
+      RowBox[{
+       RowBox[{"m", "-", "1"}], ",", "n"}], "]"}], " ", "+", " ", 
+     RowBox[{"routes", "[", 
+      RowBox[{"m", ",", 
+       RowBox[{"n", "-", "1"}]}], "]"}]}]}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.4366910919143248`*^9, 3.4366911233135138`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"routes", "[", 
+   RowBox[{"2", ",", "2"}], "]"}], "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.436691124748335*^9, 3.43669112827052*^9}}],
+
+Cell[BoxData["6"], "Output",
+ CellChangeTimes->{3.436691128942964*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"routes", "[", 
+  RowBox[{"20", ",", "20"}], "]"}]], "Input",
+ CellChangeTimes->{{3.436691131857366*^9, 3.436691133664872*^9}}],
+
+Cell[BoxData["137846528820"], "Output",
+ CellChangeTimes->{3.436691134708065*^9}]
+}, Open  ]],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.436691011073814*^9, 3.43669101195642*^9}}]
+},
+WindowSize->{640, 614},
+WindowMargins->{{175, Automatic}, {Automatic, 26}},
+FrontEndVersion->"6.0 for Mac OS X x86 (32-bit) (May 21, 2008)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[568, 21, 299, 8, 27, "Input"],
+Cell[870, 31, 298, 8, 27, "Input"],
+Cell[1171, 41, 521, 15, 27, "Input"],
+Cell[CellGroupData[{
+Cell[1717, 60, 184, 4, 43, "Input"],
+Cell[1904, 66, 70, 1, 27, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2011, 72, 150, 3, 27, "Input"],
+Cell[2164, 77, 81, 1, 27, "Output"]
+}, Open  ]],
+Cell[2260, 81, 91, 1, 27, "Input"]
+}
+]
+*)
+
+(* End of internal cache information *)
+
