@@ -1,3 +1,7 @@
+{--
+This works, but is crazy inefficient! See Mathematic solution.
+--}
+
 routes :: Integer -> Integer -> Integer
 routes 0 _ = 1
 routes _ 0 = 1
